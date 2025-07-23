@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odontogalerie - Clínica Odontológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="logo-img">
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link">Início</a></li>
+                        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                        <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#profissionais" class="nav-link">Profissionais</a></li>
+                        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <!-- Hero Carousel -->
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="image/caroul-inicio/1.jpg" alt="Clínica Moderna">
+                </div>
+                <div class="carousel-slide">
+                    <img src="image/caroul-inicio/2.jpg" alt="Atendimento Profissional">
+                </div>
+                <div class="carousel-slide">
+                    <img src="image/caroul-inicio/3.jpg" alt="Família Feliz">
+                </div>
+                <div class="carousel-slide">
+                    <img src="image/caroul-inicio/4.jpg" alt="Equipe Profissional">
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Cuidamos da sua <span class="text-accent">saúde bucal</span> com excelência</h1>
+            <p class="hero-subtitle">Atendimento humanizado e completo em odontologia integrada</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+                <a href="#servicos" class="btn btn-outline">Nossos Serviços</a>
+            </div>
+        </div>
+
+        <div class="floating-elements">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span class="text-primary">Serviços</span></h2>
+                <p class="section-subtitle">Oferecemos uma ampla gama de tratamentos odontológicos com tecnologia de ponta</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="limpeza">
+                    <div class="service-image">
+                        <img src="image/servicos/checkup/1.jpg" alt="Limpeza Dental">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Limpeza Dental</h3>
+                        <p class="service-description">Profilaxia completa para manter seus dentes sempre limpos e saudáveis</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="clareamento">
+                    <div class="service-image">
+                        <img src="image/servicos/clareamento/1.jpg" alt="Clareamento Dental">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Clareamento Dental</h3>
+                        <p class="service-description">Recupere o branco natural dos seus dentes com segurança e eficácia</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="ortodontia">
+                    <div class="service-image">
+                        <img src="image/servicos/ortodontia/1.jpg" alt="Ortodontia">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ortodontia</h3>
+                        <p class="service-description">Alinhamento perfeito dos dentes para um sorriso harmonioso</p>
+                    </div>
+                </div>
+                <!-- <div class="service-card" data-service="Harmonização">
+                    <div class="service-image">
+                        <img src="image/servicos/harmonizacao/1.jpg" alt="Harmonização">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Harmonização orofacial</h3>
+                        <p class="service-description">Procedimentos estéticos exclusivos para equilibrar e realçar a beleza facial.</p>
+                    </div>
+                </div> -->
+                <div class="service-card" data-service="implantes">
+                    <div class="service-image">
+                        <img src="image/servicos/implantes/1.jpg" alt="Implantes Dentários">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Implantes Dentários</h3>
+                        <p class="service-description">Reposição de dentes perdidos com implantes de alta qualidade</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="harmonização">
+                    <div class="service-image">
+                        <img src="image/servicos/harmonizacao/1.jpg" alt="Harmonização">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Harmonização orofacial</h3>
+                        <p class="service-description">Procedimentos estéticos exclusivos para equilibrar e realçar a beleza facial.</p>
+                    </div>
+                </div>
+                <div class="service-card" data-service="plástica">
+                    <div class="service-image">
+                        <img src="image/servicos/plastica/1.jpg" alt="Plástica gengival">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Plástica Gengival</h3>
+                        <p class="service-description">Procedimento cirúrgico delicado para remodelar a gengiva, visando harmonia e equilíbrio facial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossas <span class="text-primary">Especialidades</span></h2>
+                <p class="section-subtitle">Atendimento especializado em diversas áreas da odontologia</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="specialty-title">Odontologia Geral</h3>
+                    <p class="specialty-description">Cuidados básicos e preventivos para toda a família</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="specialty-title">Endodontia</h3>
+                    <p class="specialty-description">Tratamento de canal com tecnologia moderna</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="specialty-title">Estética Dental</h3>
+                    <p class="specialty-description">Transformamos seu sorriso com procedimentos estéticos</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="specialty-title">Odontopediatria</h3>
+                    <p class="specialty-description">Cuidado especial para o sorriso das crianças</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre a <span class="text-primary">Odontogalerie</span></h2>
+                    <p class="about-description">
+                        A Odontogalerie oferece atendimento humanizado desde 2010. Nosso time de profissionais está preparado para
+                        cuidar da sua saúde bucal com empatia, ética e excelência.
+                    </p>
+                    <p class="about-description">
+                        Utilizamos tecnologia de ponta e técnicas modernas para proporcionar o melhor tratamento odontológico,
+                        sempre priorizando o conforto e bem-estar dos nossos pacientes.
+                    </p>
+                    <a href="#profissionais" class="btn btn-primary">Conheça nossa equipe</a>
+                </div>
+
+                <div class="about-carousel">
+                    <div class="about-carousel-container">
+                        <div class="about-carousel-slide active">
+                            <img src="image/salasdetrab/1.jpg" alt="Recepção da Clínica">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="image/salasdetrab/2.jpg" alt="Sala de Tratamento">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="image/salasdetrab/3.jpg" alt="Equipe Trabalhando">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="image/salasdetrab/4.jpg" alt="Sala de Esterilização">
+                        </div>
+                    </div>
+                    
+                    <!-- About Carousel Controls -->
+                    <button class="about-carousel-btn about-carousel-prev" onclick="changeAboutSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="about-carousel-btn about-carousel-next" onclick="changeAboutSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- About Carousel Indicators -->
+                    <div class="about-carousel-indicators">
+                        <span class="about-indicator active" onclick="currentAboutSlide(1)"></span>
+                        <span class="about-indicator" onclick="currentAboutSlide(2)"></span>
+                        <span class="about-indicator" onclick="currentAboutSlide(3)"></span>
+                        <span class="about-indicator" onclick="currentAboutSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">10.000+</div>
+                    <div class="stat-label">Pacientes Atendidos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Emergência</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professionals Section -->
+    <section class="professionals" id="profissionais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa <span class="text-primary">Equipe</span></h2>
+                <p class="section-subtitle">Profissionais qualificados e experientes para cuidar do seu sorriso</p>
+            </div>
+            <div class="professionals-grid">
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <img src="image/equipe/1.jpg" alt="Dra. Maria Silva">
+                        <div class="professional-overlay"></div>
+                    </div>
+                    <div class="professional-content">
+                        <h3 class="professional-name">Dra. Maria Silva</h3>
+                        <span class="professional-specialty">Ortodontista</span>
+                        <p class="professional-crm">CRO-SP 12345</p>
+                        <p class="professional-description">Especialista em ortodontia com mais de 10 anos de experiência</p>
+                    </div>
+                </div>
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <img src="image/equipe/2.jpg" alt="Dr. João Santos">
+                        <div class="professional-overlay"></div>
+                    </div>
+                    <div class="professional-content">
+                        <h3 class="professional-name">Dr. João Santos</h3>
+                        <span class="professional-specialty">Implantodontista</span>
+                        <p class="professional-crm">CRO-SP 67890</p>
+                        <p class="professional-description">Especialista em implantes dentários e cirurgia oral</p>
+                    </div>
+                </div>
+                <div class="professional-card">
+                    <div class="professional-image">
+                        <img src="image/equipe/3.jpg" alt="Dra. Ana Costa">
+                        <div class="professional-overlay"></div>
+                    </div>
+                    <div class="professional-content">
+                        <h3 class="professional-name">Dra. Ana Costa</h3>
+                        <span class="professional-specialty">Endodontista</span>
+                        <p class="professional-crm">CRO-SP 11111</p>
+                        <p class="professional-description">Especialista em tratamento de canal e endodontia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos <span class="text-primary">Pacientes</span> dizem</h2>
+                <p class="section-subtitle">Depoimentos reais de quem confia na Odontogalerie</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-quote-left"></i>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente atendimento! A equipe é muito profissional e o ambiente é acolhedor. 
+                        Recomendo a todos que buscam qualidade em tratamento odontológico."
+                    </p>
+                    <p class="testimonial-author">- Maria Fernanda</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-quote-left"></i>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Fiz meu implante aqui e o resultado superou minhas expectativas. 
+                        Profissionais competentes e tecnologia de ponta!"
+                    </p>
+                    <p class="testimonial-author">- Carlos Eduardo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social" id="social">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Siga-nos nas <span class="text-primary">Redes Sociais</span></h2>
+                <p class="section-subtitle">Fique por dentro das novidades e dicas de saúde bucal</p>
+            </div>
+            <div class="social-grid">
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="social-title">Instagram</h3>
+                    <p class="social-description">Acompanhe nossos casos de sucesso e dicas diárias</p>
+                    <span class="social-followers">5.2k seguidores</span>
+                </a>
+                <a href="#" class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3 class="social-title">Facebook</h3>
+                    <p class="social-description">Participe da nossa comunidade e tire suas dúvidas</p>
+                    <span class="social-followers">3.8k curtidas</span>
+                </a>
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="social-title">YouTube</h3>
+                    <p class="social-description">Vídeos educativos sobre saúde bucal</p>
+                    <span class="social-followers">1.2k inscritos</span>
+                </a>
+                <a href="#" class="social-card whatsapp">
+                    <div class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="social-title">WhatsApp</h3>
+                    <p class="social-description">Atendimento direto e agendamento rápido</p>
+                    <span class="social-followers">Online agora</span>
+                </a>
+            </div>
+            
+            <div class="social-cta">
+                <h3 class="social-cta-title">Conecte-se Conosco!</h3>
+                <p class="social-cta-text">Siga nossas redes sociais e fique por dentro de todas as novidades</p>
+                <div class="social-cta-buttons">
+                    <a href="#" class="btn btn-secondary">Seguir no Instagram</a>
+                    <a href="#" class="btn btn-outline">Curtir no Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="contact-bg">
+            <img src="/placeholder.svg?height=800&width=1920" alt="Fachada da Clínica" class="contact-img">
+            <div class="contact-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em <span class="text-primary">Contato</span></h2>
+                <p class="section-subtitle">Estamos prontos para cuidar do seu sorriso</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Endereço</h3>
+                            <p class="contact-text">Rua das Flores, 123<br>Centro - São Paulo/SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Telefone</h3>
+                            <p class="contact-text">(11) 3456-7890<br>(11) 98765-4321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">E-mail</h3>
+                            <p class="contact-text">contato@odontogalerie.com.br<br>agendamento@odontogalerie.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Horário de Funcionamento</h3>
+                            <p class="contact-text">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5511987654321" class="btn btn-primary btn-full" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar pelo WhatsApp
+                    </a>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.142835348343!2d-34.831143499999996!3d-7.1094406999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd3d0e1fa72b%3A0x35ac5b89a2b73c6b!2sOdontoGalerie%20-%20Cl%C3%ADnica%20Odontol%C3%B3gica%20e%20de%20Harmoniza%C3%A7%C3%A3o%20Facial%20em%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1753064415263!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/logo/logo.jpg " alt="Odontogalerie" class="footer-logo-img">
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Odontogalerie. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio" class="footer-link">Início</a>
+                <a href="#servicos" class="footer-link">Serviços</a>
+                <a href="#sobre" class="footer-link">Sobre</a>
+                <a href="#contato" class="footer-link">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
