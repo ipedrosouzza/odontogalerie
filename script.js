@@ -371,7 +371,7 @@ function autoAboutSlide() {
 document.addEventListener("DOMContentLoaded", () => {
   // Hero carousel
   if (slides.length > 0) {
-    let heroAutoPlayInterval = setInterval(autoSlide, 3000)
+    let heroAutoPlayInterval = setInterval(autoSlide, 5000)
 
     const heroSection = document.querySelector(".hero")
     if (heroSection) {
@@ -380,14 +380,14 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       heroSection.addEventListener("mouseleave", () => {
-        heroAutoPlayInterval = setInterval(autoSlide, 3000)
+        heroAutoPlayInterval = setInterval(autoSlide, 5000)
       })
     }
   }
 
   // About carousel
   if (aboutSlides.length > 0) {
-    let aboutAutoPlayInterval = setInterval(autoAboutSlide, 3000)
+    let aboutAutoPlayInterval = setInterval(autoAboutSlide, 4000)
 
     const aboutSection = document.querySelector(".about-carousel")
     if (aboutSection) {
@@ -396,7 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       aboutSection.addEventListener("mouseleave", () => {
-        aboutAutoPlayInterval = setInterval(autoAboutSlide, 3000)
+        aboutAutoPlayInterval = setInterval(autoAboutSlide, 4000)
       })
     }
   }
@@ -414,4 +414,42 @@ document.addEventListener("keydown", (e) => {
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Odontogalerie website loaded successfully!")
+})
+
+// Função para abrir Google Maps
+function openGoogleMaps() {
+  // OPÇÃO 1: Substitua pelo endereço real da clínica
+  const address = "https://maps.app.goo.gl/T2EoHgxNc7oAPD7J8"
+  const encodedAddress = encodeURIComponent(address)
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`
+
+  // OPÇÃO 2: Ou use um link direto do Google Maps (mais preciso)
+  // const googleMapsUrl = "https://maps.google.com/maps?q=-23.550520,-46.633308" // Coordenadas
+
+  // OPÇÃO 3: Ou use um link compartilhado do Google Maps
+  // const googleMapsUrl = "https://goo.gl/maps/SeuLinkCompartilhado"
+
+  // Abre em nova aba
+  window.open(googleMapsUrl, "_blank")
+}
+
+// Adiciona evento de teclado para acessibilidade
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    const mapContainer = document.querySelector(".map-container")
+    if (document.activeElement === mapContainer) {
+      e.preventDefault()
+      openGoogleMaps()
+    }
+  }
+})
+
+// Torna o mapa focável para acessibilidade
+document.addEventListener("DOMContentLoaded", () => {
+  const mapContainer = document.querySelector(".map-container")
+  if (mapContainer) {
+    mapContainer.setAttribute("tabindex", "0")
+    mapContainer.setAttribute("role", "button")
+    mapContainer.setAttribute("aria-label", "Abrir localização no Google Maps")
+  }
 })

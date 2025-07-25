@@ -15,7 +15,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="index.html" class="logo">
-                    <img src="/images/logo.png" alt="Odontogalerie" class="logo-img">
+                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="logo-img">
                 </a>
                 
                 <nav class="nav">
@@ -38,7 +38,7 @@
     </header>
 
     <main style="padding-top: 100px;">
-        <section class="service-hero">
+        <section class="service-hero" style="background-image: linear-gradient(rgba(139, 195, 74, 0.8), rgba(139, 195, 74, 0.8)), url('/placeholder.svg?height=600&width=1920&text=Limpeza+Dental+Profissional'); background-size: cover; background-position: center;">
             <div class="container">
                 <div class="service-hero-content">
                     <a href="index.html#servicos" class="back-link">
@@ -46,10 +46,10 @@
                         Voltar aos serviços
                     </a>
                     
-                    <h1 class="service-hero-title">Limpeza Dental</h1>
+                    <h1 class="service-hero-title">Clareamento</h1>
                     <p class="service-hero-description">
-                        A limpeza dental profissional é fundamental para manter a saúde bucal em dia. 
-                        Nosso procedimento remove tártaro, placa bacteriana e manchas, prevenindo doenças gengivais e cáries.
+                       O clareamento dental é essencial para quem deseja um sorriso mais branco e confiante.
+Nosso procedimento clareia os dentes com segurança, removendo manchas causadas por alimentos, bebidas e o tempo, devolvendo brilho e beleza ao seu sorriso.
                     </p>
                     
                     <div class="service-hero-buttons">
@@ -73,11 +73,11 @@
                         <div class="service-card-detail">
                             <h2 class="service-section-title">Benefícios</h2>
                             <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> Remove tártaro e placa bacteriana</li>
-                                <li><i class="fas fa-check-circle"></i> Previne doenças gengivais</li>
-                                <li><i class="fas fa-check-circle"></i> Elimina mau hálito</li>
+                                <li><i class="fas fa-check-circle"></i> Remove manchas superficiais</li>
                                 <li><i class="fas fa-check-circle"></i> Deixa os dentes mais brancos</li>
+                                <li><i class="fas fa-check-circle"></i> Melhora a autoestima</li>
                                 <li><i class="fas fa-check-circle"></i> Melhora a saúde geral</li>
+                                <li><i class="fas fa-check-circle"></i> Procedimento seguro e eficaz</li>
                             </ul>
                         </div>
                     </div>
@@ -87,12 +87,32 @@
                             <h2 class="service-section-title">Como Funciona</h2>
                             <ol class="process-list">
                                 <li><span class="step-number">1</span> Avaliação inicial da saúde bucal</li>
-                                <li><span class="step-number">2</span> Remoção de tártaro com ultrassom</li>
-                                <li><span class="step-number">3</span> Polimento dos dentes</li>
-                                <li><span class="step-number">4</span> Aplicação de flúor</li>
-                                <li><span class="step-number">5</span> Orientações de higiene</li>
+                                <li><span class="step-number">2</span> Isolamento dos dentes e proteção da gengiva</li>
+                                <li><span class="step-number">3</span> Aplicação do gel clareador</li>
+                                <li><span class="step-number">4</span> Ativação com luz (quando necessário)</li>
+                                <li><span class="step-number">5</span> Reavaliação e orientações pós-tratamento</li>
                             </ol>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-gallery">
+            <div class="container">
+                <h2 class="service-section-title">Procedimento de <span class="text-primary">Limpeza</span></h2>
+                <div class="service-images">
+                    <div class="service-image-item">
+                        <img src="image/antes-depois/clareamento/antes.jpg" alt="Antes da limpeza dental">
+                        <p>Antes do procedimento</p>
+                    </div>
+                    <!-- <div class="service-image-item">
+                        <img src="image/antes-depois/clareamento/durante.jpg" alt="Durante a limpeza dental">
+                        <p>Durante o procedimento</p>
+                    </div> -->
+                    <div class="service-image-item">
+                        <img src="image/antes-depois/clareamento/depois.jpg" alt="Depois da limpeza dental">
+                        <p>Resultado final</p>
                     </div>
                 </div>
             </div>
@@ -116,7 +136,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="/images/logo.png" alt="Odontogalerie" class="footer-logo-img">
+                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="footer-logo-img">
                 </div>
                 
                 <div class="footer-text">
@@ -156,7 +176,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--primary-color);
+            color: white;
             text-decoration: none;
             margin-bottom: 2rem;
             font-weight: 500;
@@ -299,6 +319,30 @@
             .service-cta-title {
                 font-size: 2rem;
             }
+        }
+
+        .service-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-image-item {
+            text-align: center;
+        }
+
+        .service-image-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .service-gallery {
+            padding: 5rem 0;
+            background: var(--gray-light);
         }
     </style>
 
