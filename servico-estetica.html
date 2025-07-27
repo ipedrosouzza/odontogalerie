@@ -1,329 +1,246 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odontologia Estética - Odontogalerie</title>
-    <meta name="description" content="Transforme seu sorriso com procedimentos estéticos avançados. Conheça nossos tratamentos estéticos na Odontogalerie.">
-    
+    <title>Odontologia Estética - Odonto Galerie</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header" id="header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">
-                    <img src="/image/logo/logo.jpg" alt="Odontogalerie" class="logo-img">
-                </a>
-                
+                <div class="logo">
+                    <img src="logo.png" alt="Odonto Galerie" class="logo-img">
+                </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="index.html#inicio" class="nav-link">Início</a></li>
-                        <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
-                        <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
-                        <li><a href="index.html#especialidades" class="nav-link">Especialidades</a></li>
-                        <li><a href="index.html#profissionais" class="nav-link">Profissionais</a></li>
-                        <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+                        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i>
-                    Agendar Consulta
-                </a>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <main style="padding-top: 100px;">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(139, 195, 74, 0.8), rgba(139, 195, 74, 0.8)), url('/placeholder.svg?height=600&width=1920&text=Odontologia+Estética'); background-size: cover; background-position: center;">
-            <div class="container">
-                <div class="service-hero-content">
-                    <a href="index.html#servicos" class="back-link">
-                        <i class="fas fa-arrow-left"></i>
-                        Voltar aos serviços
-                    </a>
-                    
-                    <h1 class="service-hero-title">Odontologia Estética</h1>
-                    <p class="service-hero-description">
-                        Transforme seu sorriso com nossos procedimentos estéticos de última geração. 
-                        Combinamos arte e ciência para criar sorrisos naturais e harmoniosos que realçam sua beleza única.
-                    </p>
-                    
-                    <div class="service-hero-buttons">
-                        <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                            <i class="fas fa-phone"></i>
-                            Agendar Consulta
-                        </a>
-                        <a href="https://wa.me/5511912345678" class="btn btn-outline">
-                            <i class="fab fa-whatsapp"></i>
-                            WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-details">
-            <div class="container">
-                <div class="service-details-grid">
-                    <div class="service-benefits">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Procedimentos Estéticos</h2>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>Lentes de Contato Dental:</strong> Resina ou porcelana ultra-finas</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Reabilitação Oral:</strong> Transformação completa do sorriso</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Clareamento Dental:</strong> Dentes mais brancos e radiantes</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Plástica Gengival:</strong> Contorno gengival perfeito</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Invisalign:</strong> Alinhamento invisível dos dentes</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Aparelhos Ortodônticos:</strong> Correção estética e funcional</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-process">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Harmonização Orofacial</h2>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> <strong>Cirurgia Ortognática:</strong> Correção de deformidades faciais</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Toxina Botulínica:</strong> Suavização de rugas e linhas</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Ácido Hialurônico:</strong> Preenchimento e hidratação</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Bioestimuladores:</strong> Estímulo natural do colágeno</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Radiofrequência:</strong> Rejuvenescimento facial</li>
-                                <li><i class="fas fa-check-circle"></i> <strong>Harmonização Completa:</strong> Equilíbrio facial perfeito</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-gallery">
-            <div class="container">
-                <h2 class="service-section-title">Transformações <span class="text-primary">Estéticas</span></h2>
-                <div class="service-images">
-                    <div class="service-image-item">
-                        <img src="/placeholder.svg?height=300&width=400&text=Lentes+de+Contato" alt="Lentes de contato dental">
-                        <p>Lentes de Contato Dental</p>
-                    </div>
-                    <div class="service-image-item">
-                        <img src="/placeholder.svg?height=300&width=400&text=Harmonização+Facial" alt="Harmonização orofacial">
-                        <p>Harmonização Orofacial</p>
-                    </div>
-                    <div class="service-image-item">
-                        <img src="/placeholder.svg?height=300&width=400&text=Invisalign" alt="Invisalign">
-                        <p>Invisalign</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-cta">
-            <div class="container">
-                <div class="service-cta-content">
-                    <h2 class="service-cta-title">Realize o sorriso dos seus sonhos!</h2>
-                    <p class="service-cta-text">Nossos procedimentos estéticos criam sorrisos únicos e naturais</p>
-                    <a href="https://wa.me/5511912345678" class="btn btn-secondary">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="/placeholder.svg?height=600&width=1200" alt="Odontologia Estética" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Odontologia <span class="text-accent">Estética</span></h1>
+                <p class="hero-subtitle animate-fade-up">Transforme seu sorriso com tratamentos estéticos de alta qualidade</p>
+                <div class="hero-buttons animate-fade-up">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta de Odontologia Estética" class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i>
                         Agendar pelo WhatsApp
                     </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Services Grid -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tratamentos Estéticos</h2>
+                <p class="section-subtitle">
+                    Procedimentos avançados para conquistar o sorriso dos seus sonhos
+                </p>
+            </div>
+            <div class="services-grid">
+                <!-- Lentes de Contato Dental -->
+                <div class="service-card" onclick="window.location.href='servico-lentes-contato.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lentes de Contato Dental">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Lentes de Contato Dental</h3>
+                        <p class="service-description">
+                            Lâminas ultrafinas em resina ou porcelana para transformar completamente seu sorriso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Reabilitação Oral -->
+                <div class="service-card" onclick="window.location.href='reabilitacao-oral.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Reabilitação Oral">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Reabilitação Oral</h3>
+                        <p class="service-description">
+                            Transformação completa do sorriso combinando função, estética e saúde bucal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Clareamento Dental -->
+                <div class="service-card" onclick="window.location.href='clareamento-dental.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Clareamento Dental">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Clareamento Dental</h3>
+                        <p class="service-description">
+                            Clareamento profissional para dentes mais brancos e um sorriso radiante.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Plástica Gengival -->
+                <div class="service-card" onclick="window.location.href='gengivoplastia.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Plástica Gengival">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Plástica Gengival</h3>
+                        <p class="service-description">
+                            Remodelação do contorno gengival para um sorriso mais harmônico e proporcional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Invisalign e Aparelhos -->
+                <div class="service-card" onclick="window.location.href='invisalign-aparelhos.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Invisalign">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Invisalign e Aparelhos</h3>
+                        <p class="service-description">
+                            Alinhadores invisíveis e aparelhos ortodônticos para correção estética dos dentes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cirurgia Ortognática -->
+                <div class="service-card" onclick="window.location.href='cirurgia-ortognatica.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cirurgia Ortognática">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Cirurgia Ortognática</h3>
+                        <p class="service-description">
+                            Correção cirúrgica dos ossos da face para harmonia facial e funcional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Harmonização Orofacial -->
+                <div class="service-card" onclick="window.location.href='harmonizacao-orofacial.html'">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Harmonização Orofacial">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Harmonização Orofacial</h3>
+                        <p class="service-description">
+                            Botox, preenchimentos e bioestimuladores para rejuvenescimento facial completo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <section class="social">
+        <div class="container">
+            <div class="social-cta">
+                <h2 class="social-cta-title">Transforme Seu Sorriso!</h2>
+                <p class="social-cta-text">
+                    Descubra como nossos tratamentos estéticos podem realçar sua beleza natural
+                </p>
+                <div class="social-cta-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta de Odontologia Estética" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar Consulta
+                    </a>
+                    <a href="contato.html" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Outros Contatos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="/image/logo/logo.jpg" alt="Odontogalerie" class="footer-logo-img">
+                    <img src="logo.png" alt="Odonto Galerie" class="footer-logo-img">
                 </div>
-                
                 <div class="footer-text">
-                    <p>Odontogalerie © 2025 – Todos os direitos reservados</p>
+                    <p>Cuidando do seu sorriso com excelência</p>
                 </div>
-                
                 <div class="footer-social">
-                    <a href="https://instagram.com/odontogalerie" target="_blank" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/5511912345678" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" class="footer-social-link">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-            
             <div class="footer-links">
-                <a href="#" class="footer-link">Política de Privacidade</a>
-                <a href="#" class="footer-link">Termos de Uso</a>
+                <a href="index.html" class="footer-link">Início</a>
+                <a href="sobre-nos.html" class="footer-link">Sobre</a>
+                <a href="servicos.html" class="footer-link">Serviços</a>
+                <a href="contato.html" class="footer-link">Contato</a>
+                <a href="privacidade.html" class="footer-link">Privacidade</a>
             </div>
         </div>
     </footer>
 
-    <style>
-        .service-hero {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-light) 0%, var(--gray-light) 100%);
-        }
-
-        .service-hero-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-
-        .service-hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .service-hero-description {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .service-hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .service-details {
-            padding: 5rem 0;
-            background: var(--white);
-        }
-
-        .service-details-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .service-card-detail {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            height: 100%;
-        }
-
-        .service-section-title {
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .benefits-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-
-        .benefits-list i {
-            color: var(--primary-color);
-            font-size: 1.2rem;
-            margin-top: 0.2rem;
-            flex-shrink: 0;
-        }
-
-        .service-cta {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            color: var(--white);
-        }
-
-        .service-cta-content {
-            text-align: center;
-        }
-
-        .service-cta-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .service-cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .service-gallery {
-            padding: 5rem 0;
-            background: var(--gray-light);
-        }
-
-        .service-images {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .service-image-item {
-            text-align: center;
-        }
-
-        .service-image-item img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .service-hero-title {
-                font-size: 2.5rem;
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
+        });
 
-            .service-details-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .service-hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-cta-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
-
-    <script src="script.js"></script>
+        // Service cards hover effect
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 </body>
 </html>

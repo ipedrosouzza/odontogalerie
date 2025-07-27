@@ -1,348 +1,385 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpeza Dental - Odontogalerie</title>
-    <meta name="description" content="Profilaxia completa para manter sua saúde bucal em dia. Agende sua limpeza dental na Odontogalerie.">
-    
+    <title>Limpeza Dental (Ultrassom e Profilaxia) - Odonto Galerie</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header" id="header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">
-                    <img src="/image/logo/logo.jpg" alt="Odontogalerie" class="logo-img">
-                </a>
-                
+                <div class="logo">
+                    <img src="logo.png" alt="Odonto Galerie" class="logo-img">
+                </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="index.html#inicio" class="nav-link">Início</a></li>
-                        <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
-                        <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
-                        <li><a href="index.html#especialidades" class="nav-link">Especialidades</a></li>
-                        <li><a href="index.html#profissionais" class="nav-link">Profissionais</a></li>
-                        <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+                        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i>
-                    Agendar Consulta
-                </a>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <main style="padding-top: 100px;">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(139, 195, 74, 0.8), rgba(139, 195, 74, 0.8)), url('/placeholder.svg?height=600&width=1920&text=Limpeza+Dental+Profissional'); background-size: cover; background-position: center;">
-            <div class="container">
-                <div class="service-hero-content">
-                    <a href="index.html#servicos" class="back-link">
-                        <i class="fas fa-arrow-left"></i>
-                        Voltar aos serviços
-                    </a>
-                    
-                    <h1 class="service-hero-title">Limpeza Dental</h1>
-                    <p class="service-hero-description">
-                        A limpeza dental profissional é fundamental para manter a saúde bucal em dia. 
-                        Nosso procedimento remove tártaro, placa bacteriana e manchas, prevenindo doenças gengivais e cáries.
-                    </p>
-                    
-                    <div class="service-hero-buttons">
-                        <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                            <i class="fas fa-phone"></i>
-                            Agendar Consulta
-                        </a>
-                        <a href="https://wa.me/5511912345678" class="btn btn-outline">
-                            <i class="fab fa-whatsapp"></i>
-                            WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Breadcrumb -->
+    <section style="background: var(--gray-light); padding: 1rem 0; margin-top: 80px;">
+        <div class="container">
+            <nav style="font-size: 0.9rem; color: var(--text-light);">
+                <a href="index.html" style="color: var(--primary-color); text-decoration: none;">Início</a>
+                <span style="margin: 0 0.5rem;">></span>
+                <a href="odontologia-preventiva.html" style="color: var(--primary-color); text-decoration: none;">Odontologia Preventiva</a>
+                <span style="margin: 0 0.5rem;">></span>
+                <span>Limpeza Dental (Ultrassom e Profilaxia)</span>
+            </nav>
+        </div>
+    </section>
 
-        <section class="service-details">
-            <div class="container">
-                <div class="service-details-grid">
-                    <div class="service-benefits">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Benefícios</h2>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> Remove tártaro e placa bacteriana</li>
-                                <li><i class="fas fa-check-circle"></i> Previne doenças gengivais</li>
-                                <li><i class="fas fa-check-circle"></i> Elimina mau hálito</li>
-                                <li><i class="fas fa-check-circle"></i> Deixa os dentes mais brancos</li>
-                                <li><i class="fas fa-check-circle"></i> Melhora a saúde geral</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-process">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Como Funciona</h2>
-                            <ol class="process-list">
-                                <li><span class="step-number">1</span> Avaliação inicial da saúde bucal</li>
-                                <li><span class="step-number">2</span> Remoção de tártaro com ultrassom</li>
-                                <li><span class="step-number">3</span> Polimento dos dentes</li>
-                                <li><span class="step-number">4</span> Aplicação de flúor</li>
-                                <li><span class="step-number">5</span> Orientações de higiene</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-gallery">
-            <div class="container">
-                <h2 class="service-section-title">Procedimento de <span class="text-primary">Limpeza</span></h2>
-                <div class="service-images">
-                    <div class="service-image-item">
-                        <img src="image/logo.png" alt="Antes da limpeza dental">
-                        <p>Antes do procedimento</p>
-                    </div>
-                    <div class="service-image-item">
-                        <img src="image/logo.png" alt="Depois da limpeza dental">
-                        <p>Resultado final</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-cta">
-            <div class="container">
-                <div class="service-cta-content">
-                    <h2 class="service-cta-title">Pronto para começar seu tratamento?</h2>
-                    <p class="service-cta-text">Entre em contato conosco e agende sua consulta</p>
-                    <a href="https://wa.me/5511912345678" class="btn btn-secondary">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="/placeholder.svg?height=600&width=1200" alt="Limpeza Dental" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Limpeza Dental (Ultrassom e Profilaxia)</h1>
+                <p class="hero-subtitle animate-fade-up">Remoção completa de tártaro e placa para um sorriso impecável e saudável</p>
+                <div class="hero-buttons animate-fade-up">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma Limpeza Dental com Ultrassom e Profilaxia" class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i>
                         Agendar pelo WhatsApp
                     </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Service Details -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">A Importância da Limpeza Profissional</h2>
+                    <p class="about-description">
+                        A limpeza dental profissional, que inclui o uso de ultrassom e a profilaxia, 
+                        é essencial para remover o tártaro e a placa bacteriana que se acumulam 
+                        mesmo com a escovação diária. Esses depósitos são os principais causadores 
+                        de cáries, gengivite e periodontite.
+                    </p>
+                    <p class="about-description">
+                        O ultrassom remove o tártaro de forma eficiente e indolor, enquanto a 
+                        profilaxia (escovação profissional e polimento) elimina manchas e deixa 
+                        os dentes mais lisos e brilhantes. Recomendamos visitas regulares para 
+                        manter seu sorriso sempre saudável e bonito.
+                    </p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre Limpeza Dental com Ultrassom e Profilaxia" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Saiba Mais pelo WhatsApp
+                    </a>
+                </div>
+                <div class="about-carousel">
+                    <div class="about-carousel-container">
+                        <div class="about-carousel-slide active">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Limpeza com Ultrassom">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Profilaxia Dental">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Dentes Brilhantes">
+                        </div>
+                    </div>
+                    <button class="about-carousel-btn about-carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="about-carousel-btn about-carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="about-carousel-indicators">
+                        <button class="about-indicator active"></button>
+                        <button class="about-indicator"></button>
+                        <button class="about-indicator"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Etapas da Limpeza Completa</h2>
+                <p class="section-subtitle">
+                    Como é feita a profilaxia dental com ultrassom
+                </p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="specialty-title">Avaliação Inicial</h3>
+                    <p class="specialty-description">
+                        Exame da boca para identificar áreas com placa e tártaro.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3 class="specialty-title">Remoção de Tártaro (Ultrassom)</h3>
+                    <p class="specialty-description">
+                        Utilização de aparelho de ultrassom para descolar o tártaro.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="specialty-title">Raspagem Manual</h3>
+                    <p class="specialty-description">
+                        Remoção de resíduos mais aderidos com instrumentos específicos.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3 class="specialty-title">Profilaxia (Polimento)</h3>
+                    <p class="specialty-description">
+                        Escovação profissional com pasta profilática para remover manchas e polir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Benefícios da Limpeza Regular</h2>
+                <p class="section-subtitle">
+                    Por que manter suas visitas ao dentista
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Prevenção Cáries">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Prevenção de Cáries</h3>
+                        <p class="service-description">
+                            Remoção da placa bacteriana que causa a cárie.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Gengivas Saudáveis">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Gengivas Saudáveis</h3>
+                        <p class="service-description">
+                            Evita inflamações, sangramentos e doenças periodontais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Mau Hálito">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Combate ao Mau Hálito</h3>
+                        <p class="service-description">
+                            Elimina bactérias e resíduos que causam halitose.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Dentes Mais Brancos">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Dentes Mais Brancos</h3>
+                        <p class="service-description">
+                            Remoção de manchas superficiais, deixando os dentes mais claros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequency -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequência Recomendada</h2>
+                <p class="section-subtitle">
+                    Quando agendar sua próxima limpeza
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>A Cada 6 Meses</strong><br>
+                        Para a maioria dos pacientes, a limpeza a cada seis 
+                        meses é ideal para manutenção.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>Casos Específicos</strong><br>
+                        Pacientes com doenças periodontais ou maior 
+                        acúmulo de tártaro podem precisar de mais frequência.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>Orientação Profissional</strong><br>
+                        Seu dentista indicará a frequência ideal 
+                        com base na sua saúde bucal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <section class="social">
+        <div class="container">
+            <div class="social-cta">
+                <h2 class="social-cta-title">Sorriso Saudável e Protegido!</h2>
+                <p class="social-cta-text">
+                    Agende sua limpeza dental e garanta a saúde do seu sorriso
+                </p>
+                <div class="social-cta-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma Limpeza Dental com Ultrassom e Profilaxia" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar Agora
+                    </a>
+                    <a href="odontologia-preventiva.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar aos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="footer-logo-img">
+                    <img src="logo.png" alt="Odonto Galerie" class="footer-logo-img">
                 </div>
-                
                 <div class="footer-text">
-                    <p>Odontogalerie © 2025 – Todos os direitos reservados</p>
+                    <p>Cuidando do seu sorriso com excelência</p>
                 </div>
-                
                 <div class="footer-social">
-                    <a href="https://instagram.com/odontogalerie" target="_blank" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/5511912345678" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" class="footer-social-link">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-            
             <div class="footer-links">
-                <a href="#" class="footer-link">Política de Privacidade</a>
-                <a href="#" class="footer-link">Termos de Uso</a>
+                <a href="index.html" class="footer-link">Início</a>
+                <a href="sobre-nos.html" class="footer-link">Sobre</a>
+                <a href="servicos.html" class="footer-link">Serviços</a>
+                <a href="contato.html" class="footer-link">Contato</a>
+                <a href="privacidade.html" class="footer-link">Privacidade</a>
             </div>
         </div>
     </footer>
 
-    <style>
-        .service-hero {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-light) 0%, var(--gray-light) 100%);
-        }
-
-        .service-hero-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-
-        .service-hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .service-hero-description {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .service-hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .service-details {
-            padding: 5rem 0;
-            background: var(--white);
-        }
-
-        .service-details-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .service-card-detail {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            height: 100%;
-        }
-
-        .service-section-title {
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .benefits-list li {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-
-        .benefits-list i {
-            color: var(--primary-color);
-            font-size: 1.2rem;
-        }
-
-        .process-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .process-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-
-        .step-number {
-            background: var(--primary-color);
-            color: var(--white);
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .service-cta {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            color: var(--white);
-        }
-
-        .service-cta-content {
-            text-align: center;
-        }
-
-        .service-cta-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .service-cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        @media (max-width: 768px) {
-            .service-hero-title {
-                font-size: 2.5rem;
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
+        });
 
-            .service-details-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+        // Carousel functionality
+        const slides = document.querySelectorAll('.about-carousel-slide');
+        const indicators = document.querySelectorAll('.about-indicator');
+        const prevBtn = document.querySelector('.about-carousel-prev');
+        const nextBtn = document.querySelector('.about-carousel-next');
+        let currentSlide = 0;
 
-            .service-hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-cta-title {
-                font-size: 2rem;
-            }
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
         }
 
-        .service-images {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
         }
 
-        .service-image-item {
-            text-align: center;
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
         }
 
-        .service-image-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
 
-        .service-gallery {
-            padding: 5rem 0;
-            background: var(--gray-light);
-        }
-    </style>
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
 
-    <script src="script.js"></script>
+        // Auto-play carousel
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
-

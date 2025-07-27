@@ -3,345 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpeza Dental - Odontogalerie</title>
-    <meta name="description" content="Profilaxia completa para manter sua saúde bucal em dia. Agende sua limpeza dental na Odontogalerie.">
-    
+    <title>Clareamento Dental - Odonto Galerie</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header" id="header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">
-                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="logo-img">
-                </a>
-                
+                <div class="logo">
+                    <img src="logo.png" alt="Odonto Galerie" class="logo-img">
+                </div>
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a href="index.html#inicio" class="nav-link">Início</a></li>
-                        <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
-                        <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
-                        <li><a href="index.html#especialidades" class="nav-link">Especialidades</a></li>
-                        <li><a href="index.html#profissionais" class="nav-link">Profissionais</a></li>
-                        <li><a href="index.html#contato" class="nav-link">Contato</a></li>
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre-nos.html" class="nav-link">Sobre</a></li>
+                        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                    <i class="fab fa-whatsapp"></i>
-                    Agendar Consulta
-                </a>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <main style="padding-top: 100px;">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(139, 195, 74, 0.8), rgba(139, 195, 74, 0.8)), url('/placeholder.svg?height=600&width=1920&text=Limpeza+Dental+Profissional'); background-size: cover; background-position: center;">
-            <div class="container">
-                <div class="service-hero-content">
-                    <a href="index.html#servicos" class="back-link">
-                        <i class="fas fa-arrow-left"></i>
-                        Voltar aos serviços
-                    </a>
-                    
-                    <h1 class="service-hero-title">Clareamento</h1>
-                    <p class="service-hero-description">
-                       O clareamento dental é essencial para quem deseja um sorriso mais branco e confiante.
-Nosso procedimento clareia os dentes com segurança, removendo manchas causadas por alimentos, bebidas e o tempo, devolvendo brilho e beleza ao seu sorriso.
-                    </p>
-                    
-                    <div class="service-hero-buttons">
-                        <a href="https://wa.me/5511912345678" class="btn btn-primary">
-                            <i class="fas fa-phone"></i>
-                            Agendar Consulta
-                        </a>
-                        <a href="https://wa.me/5511912345678" class="btn btn-outline">
-                            <i class="fab fa-whatsapp"></i>
-                            WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Breadcrumb -->
+    <section style="background: var(--gray-light); padding: 1rem 0; margin-top: 80px;">
+        <div class="container">
+            <nav style="font-size: 0.9rem; color: var(--text-light);">
+                <a href="index.html" style="color: var(--primary-color); text-decoration: none;">Início</a>
+                <span style="margin: 0 0.5rem;">></span>
+                <a href="odontologia-estetica.html" style="color: var(--primary-color); text-decoration: none;">Odontologia Estética</a>
+                <span style="margin: 0 0.5rem;">></span>
+                <span>Clareamento Dental</span>
+            </nav>
+        </div>
+    </section>
 
-        <section class="service-details">
-            <div class="container">
-                <div class="service-details-grid">
-                    <div class="service-benefits">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Benefícios</h2>
-                            <ul class="benefits-list">
-                                <li><i class="fas fa-check-circle"></i> Remove manchas superficiais</li>
-                                <li><i class="fas fa-check-circle"></i> Deixa os dentes mais brancos</li>
-                                <li><i class="fas fa-check-circle"></i> Melhora a autoestima</li>
-                                <li><i class="fas fa-check-circle"></i> Melhora a saúde geral</li>
-                                <li><i class="fas fa-check-circle"></i> Procedimento seguro e eficaz</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-process">
-                        <div class="service-card-detail">
-                            <h2 class="service-section-title">Como Funciona</h2>
-                            <ol class="process-list">
-                                <li><span class="step-number">1</span> Avaliação inicial da saúde bucal</li>
-                                <li><span class="step-number">2</span> Isolamento dos dentes e proteção da gengiva</li>
-                                <li><span class="step-number">3</span> Aplicação do gel clareador</li>
-                                <li><span class="step-number">4</span> Ativação com luz (quando necessário)</li>
-                                <li><span class="step-number">5</span> Reavaliação e orientações pós-tratamento</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-gallery">
-            <div class="container">
-                <h2 class="service-section-title">Procedimento de <span class="text-primary">Limpeza</span></h2>
-                <div class="service-images">
-                    <div class="service-image-item">
-                        <img src="image/antes-depois/clareamento/antes.jpg" alt="Antes da limpeza dental">
-                        <p>Antes do procedimento</p>
-                    </div>
-                    <div class="service-image-item">
-                        <img src="image/antes-depois/clareamento/depois.jpg" alt="Depois da limpeza dental">
-                        <p>Resultado final</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-cta">
-            <div class="container">
-                <div class="service-cta-content">
-                    <h2 class="service-cta-title">Pronto para começar seu tratamento?</h2>
-                    <p class="service-cta-text">Entre em contato conosco e agende sua consulta</p>
-                    <a href="https://wa.me/5511912345678" class="btn btn-secondary">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="/placeholder.svg?height=600&width=1200" alt="Clareamento Dental" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">Clareamento Dental</h1>
+                <p class="hero-subtitle animate-fade-up">Conquiste um sorriso mais branco e radiante de forma segura e eficaz</p>
+                <div class="hero-buttons animate-fade-up">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta sobre Clareamento Dental" class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i>
                         Agendar pelo WhatsApp
                     </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Service Details -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">O Que É o Clareamento Dental?</h2>
+                    <p class="about-description">
+                        O clareamento dental é um procedimento estético que visa remover manchas e pigmentações 
+                        dos dentes, deixando-os mais claros e com uma aparência mais jovem e saudável. 
+                        É uma das formas mais populares e eficazes de melhorar a estética do sorriso.
+                    </p>
+                    <p class="about-description">
+                        Utilizamos técnicas seguras e produtos de alta qualidade, seja no consultório 
+                        com supervisão profissional ou com kits para uso caseiro, sempre com a orientação 
+                        adequada para garantir os melhores resultados e minimizar a sensibilidade.
+                    </p>
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre Clareamento Dental" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Saiba Mais pelo WhatsApp
+                    </a>
+                </div>
+                <div class="about-carousel">
+                    <div class="about-carousel-container">
+                        <div class="about-carousel-slide active">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Antes e Depois do Clareamento">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Clareamento no Consultório">
+                        </div>
+                        <div class="about-carousel-slide">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Clareamento Caseiro">
+                        </div>
+                    </div>
+                    <button class="about-carousel-btn about-carousel-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="about-carousel-btn about-carousel-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="about-carousel-indicators">
+                        <button class="about-indicator active"></button>
+                        <button class="about-indicator"></button>
+                        <button class="about-indicator"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Whitening -->
+    <section class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tipos de Clareamento</h2>
+                <p class="section-subtitle">
+                    Escolha a opção ideal para o seu sorriso
+                </p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-clinic-medical"></i>
+                    </div>
+                    <h3 class="specialty-title">Clareamento de Consultório</h3>
+                    <p class="specialty-description">
+                        Realizado pelo dentista, com resultados rápidos e supervisionados.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="specialty-title">Clareamento Caseiro</h3>
+                    <p class="specialty-description">
+                        Com moldeiras personalizadas e gel clareador, sob orientação profissional.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="specialty-title">Clareamento de Dente Não Vital</h3>
+                    <p class="specialty-description">
+                        Para dentes escurecidos após tratamento de canal.
+                    </p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="specialty-title">Clareamento Combinado</h3>
+                    <p class="specialty-description">
+                        Associação das técnicas de consultório e caseira para melhores resultados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Benefícios do Clareamento</h2>
+                <p class="section-subtitle">
+                    Vantagens de ter um sorriso mais branco
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Sorriso Mais Branco">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Estética Aprimorada</h3>
+                        <p class="service-description">
+                            Dentes mais claros e brilhantes, realçando a beleza do seu sorriso.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Aumento da Autoestima">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Aumento da Autoestima</h3>
+                        <p class="service-description">
+                            Mais confiança para sorrir e interagir socialmente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Saúde Bucal">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Saúde e Juventude</h3>
+                        <p class="service-description">
+                            Um sorriso branco é frequentemente associado à saúde e juventude.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Segurança do Tratamento">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Segurança e Conforto</h3>
+                        <p class="service-description">
+                            Procedimentos seguros e com acompanhamento profissional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Considerations -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Considerações Importantes</h2>
+                <p class="section-subtitle">
+                    O que você precisa saber antes de clarear os dentes
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>Sensibilidade Temporária</strong><br>
+                        Pode ocorrer sensibilidade nos dentes durante ou após o tratamento.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>Restrições Alimentares</strong><br>
+                        Evitar alimentos e bebidas com corantes durante o tratamento.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        <strong>Manutenção dos Resultados</strong><br>
+                        A durabilidade varia e pode ser necessário retoques periódicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <section class="social">
+        <div class="container">
+            <div class="social-cta">
+                <h2 class="social-cta-title">Seu Sorriso Merece Brilhar!</h2>
+                <p class="social-cta-text">
+                    Agende sua avaliação e descubra o poder do clareamento dental
+                </p>
+                <div class="social-cta-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma avaliação para Clareamento Dental" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i>
+                        Agendar Agora
+                    </a>
+                    <a href="odontologia-estetica.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar aos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="image/logo/logo.jpg" alt="Odontogalerie" class="footer-logo-img">
+                    <img src="logo.png" alt="Odonto Galerie" class="footer-logo-img">
                 </div>
-                
                 <div class="footer-text">
-                    <p>Odontogalerie © 2025 – Todos os direitos reservados</p>
+                    <p>Cuidando do seu sorriso com excelência</p>
                 </div>
-                
                 <div class="footer-social">
-                    <a href="https://instagram.com/odontogalerie" target="_blank" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://wa.me/5511912345678" class="footer-social-link">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" class="footer-social-link">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-            
             <div class="footer-links">
-                <a href="#" class="footer-link">Política de Privacidade</a>
-                <a href="#" class="footer-link">Termos de Uso</a>
+                <a href="index.html" class="footer-link">Início</a>
+                <a href="sobre-nos.html" class="footer-link">Sobre</a>
+                <a href="servicos.html" class="footer-link">Serviços</a>
+                <a href="contato.html" class="footer-link">Contato</a>
+                <a href="privacidade.html" class="footer-link">Privacidade</a>
             </div>
         </div>
     </footer>
 
-    <style>
-        .service-hero {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-light) 0%, var(--gray-light) 100%);
-        }
-
-        .service-hero-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-
-        .service-hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .service-hero-description {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .service-hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .service-details {
-            padding: 5rem 0;
-            background: var(--white);
-        }
-
-        .service-details-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-
-        .service-card-detail {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            height: 100%;
-        }
-
-        .service-section-title {
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .benefits-list li {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-
-        .benefits-list i {
-            color: var(--primary-color);
-            font-size: 1.2rem;
-        }
-
-        .process-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .process-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-
-        .step-number {
-            background: var(--primary-color);
-            color: var(--white);
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .service-cta {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            color: var(--white);
-        }
-
-        .service-cta-content {
-            text-align: center;
-        }
-
-        .service-cta-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .service-cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        @media (max-width: 768px) {
-            .service-hero-title {
-                font-size: 2.5rem;
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
+        });
 
-            .service-details-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+        // Carousel functionality
+        const slides = document.querySelectorAll('.about-carousel-slide');
+        const indicators = document.querySelectorAll('.about-indicator');
+        const prevBtn = document.querySelector('.about-carousel-prev');
+        const nextBtn = document.querySelector('.about-carousel-next');
+        let currentSlide = 0;
 
-            .service-hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-cta-title {
-                font-size: 2rem;
-            }
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
         }
 
-        .service-images {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
         }
 
-        .service-image-item {
-            text-align: center;
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
         }
 
-        .service-image-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
 
-        .service-gallery {
-            padding: 5rem 0;
-            background: var(--gray-light);
-        }
-    </style>
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
 
-    <script src="script.js"></script>
+        // Auto-play carousel
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
