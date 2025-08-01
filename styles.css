@@ -56,6 +56,11 @@ body {
   line-height: 1.6;
 }
 
+.section-title a {
+  text-decoration: none;
+}
+
+
 .text-primary {
   color: var(--primary-color);
 }
