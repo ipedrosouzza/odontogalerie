@@ -57,7 +57,7 @@ body {
 }
 
 .section-title a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 
