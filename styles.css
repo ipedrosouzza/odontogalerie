@@ -1139,7 +1139,7 @@ body {
 
 /* Footer */
 .footer {
-  background: var(--text-dark);
+  background: var(--primary-dark);
   color: var(--white);
   padding: 3rem 0;
 }
