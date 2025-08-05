@@ -6,13 +6,13 @@ const navLinks = document.querySelectorAll(".nav-link")
 const serviceCards = document.querySelectorAll(".service-card")
 
 // Header scroll effect
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled")
-  } else {
-    header.classList.remove("scrolled")
-  }
-})
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 50) {
+//     header.classList.add("scrolled")
+//   } else {
+//     header.classList.remove("scrolled")
+//   }
+// })
 
 // Mobile menu toggle
 let mobileMenuOpen = false
@@ -69,7 +69,6 @@ navLinks.forEach((link) => {
 // Smooth scrolling for navigation links
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault()
     const targetId = link.getAttribute("href")
     const targetSection = document.querySelector(targetId)
 
@@ -371,7 +370,7 @@ function autoAboutSlide() {
 document.addEventListener("DOMContentLoaded", () => {
   // Hero carousel
   if (slides.length > 0) {
-    let heroAutoPlayInterval = setInterval(autoSlide, 5000)
+    let heroAutoPlayInterval = setInterval(autoSlide, 3000)
 
     const heroSection = document.querySelector(".hero")
     if (heroSection) {
@@ -380,14 +379,14 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       heroSection.addEventListener("mouseleave", () => {
-        heroAutoPlayInterval = setInterval(autoSlide, 5000)
+        heroAutoPlayInterval = setInterval(autoSlide, 3000)
       })
     }
   }
 
   // About carousel
   if (aboutSlides.length > 0) {
-    let aboutAutoPlayInterval = setInterval(autoAboutSlide, 4000)
+    let aboutAutoPlayInterval = setInterval(autoAboutSlide, 3000)
 
     const aboutSection = document.querySelector(".about-carousel")
     if (aboutSection) {
@@ -396,7 +395,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       aboutSection.addEventListener("mouseleave", () => {
-        aboutAutoPlayInterval = setInterval(autoAboutSlide, 4000)
+        aboutAutoPlayInterval = setInterval(autoAboutSlide, 3000)
       })
     }
   }
@@ -453,3 +452,5 @@ document.addEventListener("DOMContentLoaded", () => {
     mapContainer.setAttribute("aria-label", "Abrir localização no Google Maps")
   }
 })
+
+
