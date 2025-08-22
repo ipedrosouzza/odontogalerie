@@ -537,7 +537,8 @@ function smoothScroll(e) {
 function handleServiceCardClick(card) {
   const serviceId = card.getAttribute("data-service")
   if(serviceId) {
-    window.open(`servico-${serviceId}.html`, "_blank")
+    window.location.href = `servico-${serviceId}.html`
+    // window.open(`servico-${serviceId}.html`, "_blank")
   }
 }
 
